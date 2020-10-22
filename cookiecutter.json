@@ -1,0 +1,5 @@
+{
+    "project_name": "For general analysis or development purposes type 'notebooks'",
+    "repo_name": "{{cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "environment_name": "For general analysis or development purposes type 'dev'"
+}
