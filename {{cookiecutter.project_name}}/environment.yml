@@ -314,4 +314,4 @@ dependencies:
     - keplergl==0.2.1
     - traittypes==0.2.1
     - uuid==1.30
-prefix: C:\Users\DiDi\miniconda3\envs\dev
+prefix: C:\Users\DiDi\miniconda3\envs\{{cookiecutter.environment_name}}
