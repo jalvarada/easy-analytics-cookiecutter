@@ -8,6 +8,12 @@ $ conda config --add channels conda-forge
 $ conda install cookiecutter
 ```
 
+# To start a new project, run
+
+```
+$ cookiecutter https://github.com/jalvarada/easy-analytics-cookiecutter
+```
+
 # The directory structure
 ------------
 
