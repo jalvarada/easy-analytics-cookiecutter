@@ -11,6 +11,7 @@ $ conda install cookiecutter
 # To start a new project, run
 
 ```
+$ cd Desktop
 $ cookiecutter https://github.com/jalvarada/easy-analytics-cookiecutter
 ```
 
