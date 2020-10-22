@@ -64,13 +64,3 @@ The directory structure of your new project looks like this:
 
 ```
 
-# Used Variables
-The following table provides an overview about parameter, that are queried by cookiecutter (and why)
-
-| Name | Description |
-| ---- | ----------- |
-| **project_name** | *Name of your project* |
-| **jupyter_password** | *Password to protect your Jupyter service* |
-| **postgres_db_password** | *Password of standard postgres user* |
-| **shared_db_password** | *Password for shared database* |
-| **superset_db_password** | *Password for superset database* |
