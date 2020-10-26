@@ -68,6 +68,7 @@ target/
 
 # VS Code
 .vscode/
+.DS_Store
 
 # Spyder
 .spyproject/
