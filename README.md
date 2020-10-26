@@ -1,18 +1,88 @@
 # easy-analytics-cookiecutter
 [![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
 
-# Requirements to use the cookiecutter template
+<br>
 
-```
+DESCRIPTION IS STILL MISSING, IN HERE SOMETHING ABOUT REPRODUCBILITY, SAMPLE NOTEBOOKS, GOOD PRACTICES AND LEARNING SHOULD BE WRITTEN.
+
+
+Inspired by [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) and [cookiecutter-data-science](https://github.com/drivendata/cookiecutter-data-science).
+****
+# Instructions
+
+## Steps to use this cookiecutter template
+
+<br>
+
+1. Install [miniconda3](https://docs.conda.io/en/latest/miniconda.html)
+2. Install [git](https://www.jcchouinard.com/install-git/)
+3. Install cookiecutter
+
+```sh
+# add conda-forge channel
 $ conda config --add channels conda-forge
+
+# Install cookiecutter
 $ conda install cookiecutter
 ```
-
-# To start a new project, run
-
-```
+4. Create a new project
+```sh
+# 1 - Change working directory to your Desktop
 $ cd Desktop
+
+# 2 - Create a new project
 $ cookiecutter https://github.com/jalvarada/easy-analytics-cookiecutter
+
+# 3 - Change working directory to the project folder
+$ cd Desktop/<project name> # MAC USERS
+$ cd Desktop\<project name> # WINDOWS USERS
+
+# 4 - Build the conda environment
+$ conda env create -f environment.yml
+
+# 5 - Activate conda environment
+$ conda activate dev
+
+# 6 - Run jupyter notebooks and begin working!
+$ jupyter notebook
+
+# 7 - Deactiivate conda environmente
+$ conda deactivate
+```
+
+## Pimp your jupyter notebook
+<br>
+
+```sh
+# 1 - change working directory to <project name>
+$ cd Desktop/<project name> # MAC USERS
+$ cd Desktop\<project name> # WINDOWS USERS
+
+# 2 - generate base config file
+$ jupyter notebook --generate-config
+
+# 3 - Install jupyter extensions
+$ jupyter contrib nbextension install --user
+$ jupyter nbextension install --py --user jupytext
+
+# 4 - Create config folder to enable some nice extensions
+$ mkdir /Users/<username>/.jupyter/nbconfig # MAC
+$ mkdir C:\Users\<username>\.jupyter\nbconfig # WINDOWS
+
+# 5 - Create custom folder to modify jupyter default behaviour
+$ mkdir /Users/<username>/.jupyter/custom # MAC
+$ mkdir C:\Users\<username>\.jupyter\custom # WINDOWS
+
+# 6 - copy .js file from <project name> (current wd) to .jupyter
+$ cp .jupyter/custom/custom.js /Users/jupyter/custom/custom.js # MAC
+$ copy .jupyter\custom\custom.js C:\Users\.jupyter\custom\custom.js # WINDOWS
+
+# 7 - copy .json file from <project name> (current wd) to .jupyter
+$ cp .jupyter/nbconfig/notebook.json /Users/jupyter/nbconfig/notebook.js # MAC
+$ copy .jupyter\nbconfig\notebook.json C:\Users\.jupyter\nbconfig\notebook.json # WINDOWS
+
+# 8 - Enjoy!!
+$ jupyter notebook
 ```
 
 # The directory structure
@@ -68,6 +138,5 @@ The directory structure of your new project looks like this:
 │                           generated with `pip freeze > requirements.txt`
 │
 └── setup.py             <- Package building requierd file
-
 ```
 

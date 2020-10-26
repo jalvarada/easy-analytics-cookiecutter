@@ -50,4 +50,4 @@ dependencies:
   - pip:
     - keplergl==0.2.1
     - uuid==1.30
-
+    
