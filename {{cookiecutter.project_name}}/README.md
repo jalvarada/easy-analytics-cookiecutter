@@ -8,8 +8,8 @@
 
 ```sh
 # 1 - Change working directory to the project folder
-$ cd Desktop/<project name> # MAC USERS
-$ cd Desktop\<project name> # WINDOWS USERS
+$ cd Desktop/<project name> # MAC
+$ cd Desktop\<project name> # WINDOWS
 
 # 2 - Build the conda environment
 $ conda env create -f environment.yml
