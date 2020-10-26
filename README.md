@@ -55,8 +55,8 @@ $ conda deactivate
 
 ```sh
 # 1 - change working directory to <project name>
-$ cd Desktop/<project name> # MAC USERS
-$ cd Desktop\<project name> # WINDOWS USERS
+$ cd Desktop/<project name> # MAC
+$ cd Desktop\<project name> # WINDOWS
 
 # 2 - generate base config file
 $ jupyter notebook --generate-config
