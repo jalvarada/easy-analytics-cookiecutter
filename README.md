@@ -85,8 +85,7 @@ $ copy .jupyter\nbconfig\notebook.json C:\Users\.jupyter\nbconfig\notebook.json 
 $ jupyter notebook
 ```
 
-# The directory structure
-------------
+# Directory structure
 
 The directory structure of your new project looks like this:
 
